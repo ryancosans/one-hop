@@ -1,0 +1,49 @@
+# Machine-readable module list for agents, IDEs, and compose tooling.
+version: 1
+name: one-function-deep
+description: Thin entries, one-call delegation, no single-line wrappers.
+
+modules:
+  - id: readme
+    path: rules/00-readme.md
+    role: intro
+  - id: one-function-deep
+    path: rules/one-function-deep.md
+    tags: [layering, architecture]
+  - id: no-single-line-wrappers
+    path: rules/no-single-line-wrappers.md
+    tags: [layering]
+  - id: file-layout
+    path: rules/file-layout.md
+    tags: [layering, filesystem]
+  - id: typescript
+    path: rules/typescript.md
+    tags: [language, typescript]
+  - id: http-handlers
+    path: rules/http-handlers.md
+    tags: [http, layering]
+  - id: dependencies
+    path: rules/dependencies.md
+    tags: [dependencies]
+  - id: agent-discipline
+    path: rules/agent-implementation-discipline.md
+    tags: [agents, process]
+  - id: performance
+    path: rules/performance-checklist.md
+    tags: [performance]
+  - id: out-of-scope
+    path: rules/guardrails.md
+    tags: [process]
+
+harnesses:
+  cursor:
+    primary: assembled/AGENTS.md
+    optional_glob: .cursor/rules/*.md
+    docs: harnesses/cursor.md
+  claude_code:
+    primary: assembled/AGENTS.md
+    pointer_file: CLAUDE.md
+    docs: harnesses/claude-code.md
+  generic:
+    compact: harnesses/system-prompt.txt
+    full: assembled/AGENTS.md
