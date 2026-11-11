@@ -2,6 +2,7 @@
 version: 1
 name: one-hop
 description: No matryoshka call stacks — thin entries, logic one hop away.
+license: MIT
 
 modules:
   - id: readme

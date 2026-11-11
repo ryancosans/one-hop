@@ -6,7 +6,11 @@
 
 **No matryoshka call stacks.**
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+
 Thin entry points. Logic **one hop** away — for human and automated contributors. Drop in `AGENTS.md`, wire your harness, and add a project overlay when you need product-specific rules.
+
+**Free to use:** copy these rules into your repos, agent prompts, and internal docs at no cost — including commercial work. See [License](#license) below.
 
 These rules came out of real production use on [Aesop](https://github.com/ryancosans/aesop). The core ideas transfer to any stack; only examples and overlays are language- or product-specific.
 
@@ -53,4 +57,8 @@ Example consumer: Aesop’s repo keeps game-specific layout in its own `AGENTS.m
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+**[MIT License](LICENSE)** — Copyright (c) Ryan Cosans
+
+You may use, copy, modify, merge, publish, distribute, sublicense, and sell this material **free of charge**, including in commercial products and client work. The only requirement is that the copyright notice and license text stay with copies or substantial portions you share.
+
+There is no warranty; the rules are provided as-is. Full legal text is in [`LICENSE`](LICENSE).
