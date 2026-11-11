@@ -1,0 +1,31 @@
+name: Publish one-hop
+
+# Pushes this branch's tree to https://github.com/ryancosans/one-hop (empty repo).
+# Requires repo secret ONE_HOP_PUBLISH_PAT (fine-grained PAT with Contents read/write on one-hop).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Push to ryancosans/one-hop
+        env:
+          PAT: ${{ secrets.ONE_HOP_PUBLISH_PAT }}
+        run: |
+          if [ -z "$PAT" ]; then
+            echo "::error::Add secret ONE_HOP_PUBLISH_PAT on aesop (fine-grained PAT: Contents access on one-hop)."
+            exit 1
+          fi
+          git remote add one-hop "https://x-access-token:${PAT}@github.com/ryancosans/one-hop.git"
+          git push one-hop "HEAD:refs/heads/main"
