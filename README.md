@@ -12,7 +12,7 @@ Thin entry points. Logic **one hop** away — for human and automated contributo
 
 **Free to use:** copy these rules into your repos, agent prompts, and internal docs at no cost — including commercial work. See [License](#license) below.
 
-These rules came out of real production use on [Aesop](https://github.com/ryancosans/aesop). The core ideas transfer to any stack; only overlays are language- or product-specific.
+These rules came out of real production use on [Aesop](https://github.com/ryancosans/aesop). The core ideas transfer to any stack; [`examples/`](examples/README.md) and overlays are language- or product-specific.
 
 ## Quick start
 
@@ -31,9 +31,14 @@ These rules came out of real production use on [Aesop](https://github.com/ryanco
 rules/           # Small, composable rule modules (source of truth)
 assembled/       # Pre-built AGENTS.md for drop-in use
 harnesses/       # How to wire modules into each environment
+examples/        # Before/after code samples (see examples/README.md)
 overlays/        # Patterns for project-specific sections
 manifest.yaml    # Machine-readable list of modules and harness hints
 ```
+
+## Examples
+
+See [`examples/README.md`](examples/README.md) for allowed vs not-allowed TypeScript snippets (entries, orchestrators, wrappers, and nested chains).
 
 Edit **`rules/`** when the discipline evolves. Re-run `./tools/compose.sh` to refresh **`assembled/AGENTS.md`** and harness snippets.
 
