@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.jpg" alt="One hop — a document character leaping one arc: no matryoshka call stacks" width="420" />
+</p>
+
 # One hop
 
 **No matryoshka call stacks.**
