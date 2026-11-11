@@ -150,6 +150,8 @@ export function handleRequest(request: Request) {
 
 **Orchestrators** may sequence steps with early returns only. They must not contain business rules, parsing, or I/O beyond handing off to the next function.
 
+More standalone samples: [`examples/README.md`](../examples/README.md).
+
 
 ## Performance checklist
 

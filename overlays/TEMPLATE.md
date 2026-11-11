@@ -1,6 +1,6 @@
 # Project overlay template
 
-Append this **below** the shared rules in your repo’s `AGENTS.md`. Replace placeholders.
+Append this **below** the shared rules in your repo’s `AGENTS.md`. Replace placeholders. For a filled-in example, see [`aesop.md`](aesop.md).
 
 ---
 
