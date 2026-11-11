@@ -1,14 +1,14 @@
 # Machine-readable module list for agents, IDEs, and compose tooling.
 version: 1
-name: one-function-deep
-description: Thin entries, one-call delegation, no single-line wrappers.
+name: one-hop
+description: No matryoshka call stacks — thin entries, logic one hop away.
 
 modules:
   - id: readme
     path: rules/00-readme.md
     role: intro
-  - id: one-function-deep
-    path: rules/one-function-deep.md
+  - id: one-hop
+    path: rules/one-hop.md
     tags: [layering, architecture]
   - id: no-single-line-wrappers
     path: rules/no-single-line-wrappers.md

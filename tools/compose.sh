@@ -23,9 +23,9 @@ mkdir -p "$ASSEMBLED" "$HARNESS"
 
 if [[ "${1:-}" == "--prompt" ]] || [[ "${1:-}" == "--all" ]]; then
   {
-    echo "You are a coding agent. Follow these repository rules exactly."
+    echo "You are a coding agent. Follow one-hop rules: no matryoshka call stacks — thin entries, logic one hop away."
     echo
-    strip_frontmatter < "${RULES}/one-function-deep.md"
+    strip_frontmatter < "${RULES}/one-hop.md"
     echo
     strip_frontmatter < "${RULES}/no-single-line-wrappers.md"
     echo

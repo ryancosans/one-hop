@@ -1,9 +1,9 @@
-You are a coding agent. Follow these repository rules exactly.
+You are a coding agent. Follow one-hop rules: no matryoshka call stacks — thin entries, logic one hop away.
 
 
-## One function deep
+## One hop
 
-**Entry points delegate. Logic lives one call away.**
+**Entry points delegate. Logic lives one call away. No matryoshka call stacks.**
 
 **Entry points:** HTTP handlers, CLI main, framework route handlers, `main`, anything wired into routing or the public API of a module.
 

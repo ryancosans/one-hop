@@ -1,12 +1,12 @@
 ---
-id: one-function-deep
-title: One function deep
+id: one-hop
+title: One hop
 tags: [layering, architecture]
 ---
 
-## One function deep
+## One hop
 
-**Entry points delegate. Logic lives one call away.**
+**Entry points delegate. Logic lives one call away. No matryoshka call stacks.**
 
 **Entry points:** HTTP handlers, CLI main, framework route handlers, `main`, anything wired into routing or the public API of a module.
 

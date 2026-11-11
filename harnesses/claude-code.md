@@ -17,8 +17,8 @@ Place `AGENTS.md` in the root — use the composed file from this package plus y
 ## Submodule
 
 ```bash
-git submodule add https://github.com/ryancosans/one-function-deep.git .agent/one-function-deep
-ln -sf .agent/one-function-deep/assembled/AGENTS.md AGENTS.md
+git submodule add https://github.com/ryancosans/one-hop.git .agent/one-hop
+ln -sf .agent/one-hop/assembled/AGENTS.md AGENTS.md
 ```
 
 ## Compact mode
@@ -26,6 +26,6 @@ ln -sf .agent/one-function-deep/assembled/AGENTS.md AGENTS.md
 For a smaller context window, point at selected modules only:
 
 ```markdown
-Layering rules: `.agent/one-function-deep/rules/one-function-deep.md`
-Change discipline: `.agent/one-function-deep/rules/agent-implementation-discipline.md`
+Layering rules: `.agent/one-hop/rules/one-hop.md`
+Change discipline: `.agent/one-hop/rules/agent-implementation-discipline.md`
 ```

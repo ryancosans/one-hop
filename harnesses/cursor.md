@@ -23,7 +23,7 @@ alwaysApply: true
 ---
 ```
 
-Paste the body from `rules/one-function-deep.md` (without the duplicate `---` block if you merge fields).
+Paste the body from `rules/one-hop.md` (without the duplicate `---` block if you merge fields).
 
 ## Skills
 
@@ -33,14 +33,14 @@ Reference this repo from a skill with:
 ## Standards
 
 Read the consuming repo’s `AGENTS.md`. If it points here, read:
-https://github.com/ryancosans/one-function-deep/blob/main/assembled/AGENTS.md
+https://github.com/ryancosans/one-hop/blob/main/assembled/AGENTS.md
 ```
 
 ## Submodule
 
 ```bash
-git submodule add https://github.com/ryancosans/one-function-deep.git docs/one-function-deep
-ln -sf docs/one-function-deep/assembled/AGENTS.md AGENTS.md
+git submodule add https://github.com/ryancosans/one-hop.git docs/one-hop
+ln -sf docs/one-hop/assembled/AGENTS.md AGENTS.md
 ```
 
 Symlink keeps a single source of truth when you bump the submodule.

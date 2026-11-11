@@ -18,5 +18,5 @@ Paste the contents of [`system-prompt.txt`](./system-prompt.txt) (generate with 
 Some teams add a one-line pointer in `README.md`:
 
 ```markdown
-**Agent rules:** see [AGENTS.md](AGENTS.md) (layering based on [one-function-deep](https://github.com/ryancosans/one-function-deep)).
+**Agent rules:** see [AGENTS.md](AGENTS.md) ([one-hop](https://github.com/ryancosans/one-hop) — *no matryoshka call stacks*).
 ```

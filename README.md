@@ -1,6 +1,8 @@
-# One function deep
+# One hop
 
-**Agent-agnostic coding discipline** for human and automated contributors: thin entry points, logic one call away, no pointless wrappers, and project-specific overlays when you need them.
+**No matryoshka call stacks.**
+
+Thin entry points. Logic **one hop** away — for human and automated contributors. Drop in `AGENTS.md`, wire your harness, and add a project overlay when you need product-specific rules.
 
 These rules came out of real production use on [Aesop](https://github.com/ryancosans/aesop). The core ideas transfer to any stack; only examples and overlays are language- or product-specific.
 
@@ -43,7 +45,7 @@ Keep **universal** rules in this package (or a submodule). Keep **your product**
 - `DESIGN.md` — architecture constitution
 - A “Project summary” section appended to `AGENTS.md` (see [`overlays/TEMPLATE.md`](overlays/TEMPLATE.md))
 
-Example consumer: Aesop’s repo keeps game-specific layout in its own `AGENTS.md` and links to the shared layering rules.
+Example consumer: Aesop’s repo keeps game-specific layout in its own `AGENTS.md` and links to the shared one-hop rules.
 
 ## License
 

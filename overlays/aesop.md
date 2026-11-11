@@ -1,6 +1,6 @@
 # Example overlay: Aesop
 
-This is a **reference overlay** for [aesop](https://github.com/ryancosans/aesop). It does not ship inside Aesop today; you can merge it into aesop’s `AGENTS.md` and link here for the generic rules.
+This is a **reference overlay** for [aesop](https://github.com/ryancosans/aesop). It does not ship inside Aesop today; merge it into aesop’s `AGENTS.md` and link to [one-hop](https://github.com/ryancosans/one-hop) for the shared rules.
 
 ## Project summary
 

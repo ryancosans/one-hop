@@ -97,9 +97,9 @@ Passthrough wrappers (`handleRequest` → `routeRequest` with no other work) are
 Shared helpers used in many places are fine when the body has **multiple statements** or non-trivial logic.
 
 
-## One function deep
+## One hop
 
-**Entry points delegate. Logic lives one call away.**
+**Entry points delegate. Logic lives one call away. No matryoshka call stacks.**
 
 **Entry points:** HTTP handlers, CLI main, framework route handlers, `main`, anything wired into routing or the public API of a module.
 
